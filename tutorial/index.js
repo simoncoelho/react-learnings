@@ -9,6 +9,4 @@ const customNav =
             </ul>
         </nav>
 
-ReactDOM.render(
-    customNav, 
-    document.getElementById('root'));
+ReactDOM.createRoot(document.getElementById('root')).render(customNav);
