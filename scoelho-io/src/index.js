@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import logo from './logo.svg';
 
 
 const myNav = 
@@ -21,6 +22,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
     {myNav}
+    <img src={logo} title='what happened to the photo?' height={40}></img>
     <App />
   </div>
 );
