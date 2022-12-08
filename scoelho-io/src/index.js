@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Header from './Header.js';
+import MainContent from './MainContent.js';
+import Footer from './Footer.js';
 
 function Page(){
   return (
     <div>
       <Header/>
-      <Content/>
+      <MainContent/>
       <Footer/>
     </div>
   )
