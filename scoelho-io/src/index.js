@@ -9,8 +9,9 @@ import logo from './logo.svg';
 const myNav = 
     <nav>
         <h1>scoelho.io</h1>
-        <ul>
-            <li>.jpeg</li>
+        <ul >
+            <li>scoelho.io</li>
+            <li>.jpeg<ul><li>a</li><li>b</li></ul></li>
             <li>.toe</li>
             <li>.git</li>
             <li>.me</li>
@@ -18,14 +19,18 @@ const myNav =
     </nav>
 
 
+function CustomComponent(customNav){
+  return (
+    <div>
+      {customNav}
+      <h1>Custom Component</h1>
+    </div>
+  )
+}
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <div>
-    {myNav}
-    <img src={logo} title='what happened to the photo?' height={40}></img>
-    <App />
-  </div>
-);
+root.render(CustomComponent(myNav));
 
 
 
