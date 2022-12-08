@@ -1,16 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import logo from './logo.svg';
-
-
-const page = (
-  <div>
-
-  </div>
-)
+import Header from './Header.js';
 
 function Page(){
   return (
@@ -19,33 +11,6 @@ function Page(){
       <Content/>
       <Footer/>
     </div>
-  )
-}
-
-function Header(){
-  return (
-   <header>
-      <img src={logo} width={40}/>
-   </header>
-  )
-}
-
-function Content(){
-  return (
-    <div>
-      <h1>Hi, I'm Simon</h1>
-      <p>
-        I'm a software developer and this is my website.
-      </p>
-    </div>
-  )
-}
-
-function Footer(){
-  return (
-    <footer>
-      <small>My Footer Goes Here.</small>
-    </footer>
   )
 }
 
