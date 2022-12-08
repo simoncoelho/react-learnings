@@ -6,34 +6,51 @@ import reportWebVitals from './reportWebVitals';
 import logo from './logo.svg';
 
 
-const myNav = 
-    <nav>
-        <h1>scoelho.io</h1>
-        <ul >
-            <li>scoelho.io</li>
-            <li>.jpeg<ul><li>a</li><li>b</li></ul></li>
-            <li>.toe</li>
-            <li>.git</li>
-            <li>.me</li>
-        </ul>
-    </nav>
+const page = (
+  <div>
 
+  </div>
+)
 
-function CustomComponent(customNav){
+function Page(){
   return (
     <div>
-      {customNav}
-      <h1>Custom Component</h1>
+      <Header/>
+      <Content/>
+      <Footer/>
     </div>
   )
 }
 
+function Header(){
+  return (
+   <header>
+      <img src={logo} width={40}/>
+   </header>
+  )
+}
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(CustomComponent(myNav));
+function Content(){
+  return (
+    <div>
+      <h1>Hi, I'm Simon</h1>
+      <p>
+        I'm a software developer and this is my website.
+      </p>
+    </div>
+  )
+}
 
+function Footer(){
+  return (
+    <footer>
+      <small>My Footer Goes Here.</small>
+    </footer>
+  )
+}
 
-
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(< Page />)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
