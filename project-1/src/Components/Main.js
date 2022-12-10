@@ -2,10 +2,11 @@ import React from "react";
 
 
 function Main () {
-    return (
-        <div>
-            <p>Content for my site would theoretically go here.</p>
-        </div>
+    return (        
+        <main>
+            <h1>COMING SOON.</h1>
+            <p className="text-content">This site is under construction. Please check back soon...</p>
+        </main>
     )
 }
 
